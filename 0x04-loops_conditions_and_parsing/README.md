@@ -49,8 +49,7 @@ This project is psrt of Holberton School curriculum and it's designed to learn a
 10. Write a Bash script that displays numbers from 1 to 100.
 
 ### __Clone repository:__ https://github.com/KatyaKalache/holberton-system_engineering-devops
-### __Run the shell__: ./hsh
-### __Exit the shell__: `exit`or ctrl + D
+
 ## Authors
 Ekaterina Kalache: [github account](https://github.com/KatyaKalache), [twitter](https://twitter.com/KatyaKalache)
 
