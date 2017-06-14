@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# num from 1-20, 4th, 9th, 17th bad luck
+i=0
+while [ $i -le 19 ]
+do
+    i=$(( i+1 ))
+        echo "$i"
+case $i in
+    4)
+        echo "bad luck from China"
+        ;;
+    9)
+        echo "bad luck from Japan"
+        ;;
+    17)
+        echo "bad luck from Italy"
+        ;;
+    *)
+esac
+done
