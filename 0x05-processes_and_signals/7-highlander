@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-trap "echo I am invincible!!!" SIGKILL
+# displays the loop and set the trap
+trap "echo I am invincible!!!" SIGTERM
 while :
 do
     echo "To infinity and beyond"
