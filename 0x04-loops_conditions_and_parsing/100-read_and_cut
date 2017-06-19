@@ -2,5 +2,5 @@
 # displays the content of the file /etc/passwd
 while read i
 do
-     echo "$i" | cut -d/ -f1,2,3
+     echo "$i" | cut -d: -f1,3,6
 done </etc/passwd
