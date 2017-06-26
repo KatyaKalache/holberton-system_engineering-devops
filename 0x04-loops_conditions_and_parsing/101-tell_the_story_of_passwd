@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# displays the content of the file /etc/password
+file="/etc/passwd"
+while IFS=":" read userName passWord userID groupID geCos homeDir userShell
+do
+    echo "The user $userName is part of the $groupID gang, lives in $homeDir and rides $userShell. $userID's place is protected by the passcode $passWord , more info about the user here: $geCos"
+done <$file
