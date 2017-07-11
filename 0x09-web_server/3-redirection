@@ -3,3 +3,4 @@
 apt-get -y install nginx
 service nginx start
 sed -i '26 i \        rewrite ^/redirect_me https://www.amazon.com/ permanent;' /etc/nginx/sites-available/default
+service nginx restart
