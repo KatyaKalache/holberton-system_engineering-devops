@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-sudo apt-get -y install nginx
-sudo service nginx start
+# nstall nginx and print HS when starts
+apt-get -y install nginx
+service nginx start
 echo "Holberton School" > /usr/share/nginx/html/index.html
