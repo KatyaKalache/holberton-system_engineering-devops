@@ -1,28 +1,12 @@
-# Web server
-![alt text](https://i.imgur.com/8Gu52Qv.png)
+# Web stack debugging #0
+![alt text](http://i.imgur.com/uWLzjc8.jpg)
 ## Description
-Configuring web-01 server, writung a Bash script that automatically performs commands to configure a Ubuntu machine without any human intervention
+The Webstack debugging series will train you to the art of debugging. Computers and software rarely work the way we want (that's the "fun" part of the job!).
+
+Being able to debug a webstack is essential for a Full-Stack Software Engineer, and it takes practice to be a master it.
 ## Tasks
 
-0. a Bash script that transfers a file from our client to a server:
-
-Requirements:
-
-1. Accepts 4 parameters:
-
-   1) The path to the file to be transferred
-
-   2) The IP of the server we want to transfer the file to
-
-   3) The username scp connects with
-
-   4) The path to the SSH private key that `scp` uses
-
-2. Display Usage: 0-transfer_file `PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY` if less than 3 parameters passed
-
-3. `scp` must transfer the file to the user home directory `~/`
-
-4. Strict host key checking must be disabled when using `scp`
+0. get Apache to run on the container and to return a page containing Hello Holberton when querying the root of it.
 
 ### __Clone repository:__ https://github.com/KatyaKalache/holberton-system_engineering-devops.git
 
@@ -30,10 +14,8 @@ Requirements:
 
 | What should I learn from this project |
 | ---------------- |
-|  What DNS stands for |
-|  What is DNS main role |
-|  What are DNS record types for: `A`, `CNAME`, `TXT`, `MX` |
-|  What is the main role of a web server |
+|  What is the CPU load |
+|  `curl` |
 
 ## Authors
 
