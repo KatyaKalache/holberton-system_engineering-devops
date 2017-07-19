@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # /redirect_me is redirecting to another page using nginx
+apt-get update
 sudo apt-get -y install nginx
 sudo service nginx start
 sudo touch /usr/share/nginx/html/redirect_me
