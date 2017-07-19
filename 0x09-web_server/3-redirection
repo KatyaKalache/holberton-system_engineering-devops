@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # /redirect_me is redirecting to another page using nginx
-apt-get -y install nginx
-service nginx start
-sed -i '26 i \        rewrite ^/redirect_me https://www.amazon.com/ permanent;' /etc/nginx/sites-available/default
-service nginx restart
+sudo apt-get -y install nginx
+sudo service nginx start
+sudo touch /usr/share/nginx/html/redirect_me
+sudo sed -i '26 i \        rewrite ^/redirect_me https://www.amazon.com/ permanent;' /etc/nginx/sites-available/default
+sudo service nginx restart
