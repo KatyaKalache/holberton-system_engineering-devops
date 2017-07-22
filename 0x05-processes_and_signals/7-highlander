@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# displays the loop and set the trap
+trap "echo I am invincible!!!" SIGTERM
+while :
+do
+    echo "To infinity and beyond"
+    sleep 2
+done
