@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+tbd
+=======
 # Web stack debugging #0
 ![alt text](http://i.imgur.com/uWLzjc8.jpg)
 ## Description
@@ -23,3 +26,4 @@ Ekaterina Kalache: [github account](https://github.com/KatyaKalache), [twitter](
 
 ## License
 Public, no copyright protection# holberton-system_engineering-devops
+>>>>>>> 620784e23f0446fd82977bc5d77360bb50dafb33

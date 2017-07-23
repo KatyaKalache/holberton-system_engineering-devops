@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+tbd
+=======
 # Web server
 ![alt text](https://i.imgur.com/8Gu52Qv.png)
 ## Description
@@ -50,3 +53,4 @@ Ekaterina Kalache: [github account](https://github.com/KatyaKalache), [twitter](
 
 ## License
 Public, no copyright protection# holberton-system_engineering-devops
+>>>>>>> 620784e23f0446fd82977bc5d77360bb50dafb33
