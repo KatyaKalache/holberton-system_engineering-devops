@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# local host to listen to port 80
+sudo apt-get update
 sudo service nginx start
 sudo sed -i “9 i \ ^/listen 80 default_server;/" /etc/nginx/sites-available/default
+sudo sed -i "10 i \ ^/localhost;/" /etc/nginx/sites-availab\le/default
 sudo service nginx restart
