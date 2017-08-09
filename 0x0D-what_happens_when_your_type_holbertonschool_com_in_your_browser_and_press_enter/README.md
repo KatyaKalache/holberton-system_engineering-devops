@@ -1,0 +1,1 @@
+This is link to a blogpost to Holbertonschool exercise. The topic of the blog: What happens when you type holbertonschool.com in your browser and press Enter
