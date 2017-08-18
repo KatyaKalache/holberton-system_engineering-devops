@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Install and configure HAproxy on your load balancer server
+apt-get -y install software-properties-common
 add-apt-repository -y ppa:vbernat/haproxy-1.5
 apt-get update
 apt-get -y install haproxy
 sed -i '1 i \ENABLED=1' /etc/default/haproxy
-sed -i '2 i \balance roundrobin' /etc/default/haproxy
-sed -i '3 i \listen Holberton *:80 \n mode http \n stats enable \n stats uri /haproxy_stats \n balance roundrobin \n server 120-web-01 66.70.184.186:80 check \n server 120-web-02 142.44.164.126:80 check' /etc/haproxy/haproxy.cfg
+sed -i '1 i \listen Holberton *:80 \n mode http \n stats enable \n stats uri /haproxy_stats \n balance roundrobin \n server 120-web-01 66.70.184.186:80 check \n server 120-web-02 142.44.164.126:80 check' /etc/haproxy/haproxy.cfg
 service haproxy restart
