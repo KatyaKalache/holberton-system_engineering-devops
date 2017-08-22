@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # local host to listen to port 80
 apt-get update
-sed -i “s/8080/80/" /etc/nginx/sites-enabled/default
+sed -i "s/8080/80/" /etc/nginx/sites-enabled/default
 service nginx restart
