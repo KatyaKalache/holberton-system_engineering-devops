@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Output: The subdomain is a record and points to
+func_dig () {
+    dig "$2"."$1" | grep -A1 'ANSWER SECTION:' |  awk \
+	'{print "The subdomain "$1" is a "$4" record and points to "$5""}' | tail -1
+}
+func_dig $1 $2
