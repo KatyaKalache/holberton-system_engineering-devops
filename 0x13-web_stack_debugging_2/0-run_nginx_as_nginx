@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 # configures Nginx so it runs as nginx user and not root
-service nginx start
-sed -i 's/80 default_server/8080 default_server/g' \
-    /etc/nginx/sites-available/default
-chmod 777 /etc/nginx/nginx.conf
+sed -i 's/80/8080' /etc/nginx/sites-available/default
 sed -i 's/#user www-data;/user nginx;/g' /etc/nginx/nginx.conf
 service nginx restart
