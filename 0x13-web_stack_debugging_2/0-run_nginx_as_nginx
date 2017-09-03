@@ -2,4 +2,5 @@
 # run nginx as nginx user
 sed -i "1 i \ user nginx;" /etc/nginx/nginx.conf
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+pkill apache2
 service nginx restart
