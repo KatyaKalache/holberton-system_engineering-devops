@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # run nginx as nginx user
+chmod -R 755 /etc/nginx/nginx.conf
 sed -i "1 i \ user nginx;" /etc/nginx/nginx.conf
 sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 pkill apache2
-service nginx restart
+su nginx -c "start-stop-daemon --start --pidfile /run/nginx.pid --exec /usr/sbin/nginx"
