@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-su nginx "whoami"
+su "$1" -c "whoami"
