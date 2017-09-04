@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # accepts one argument and execute whoami command
-su "$1" -c "whoami"
-
+sudo -u "$1" "whoami"
