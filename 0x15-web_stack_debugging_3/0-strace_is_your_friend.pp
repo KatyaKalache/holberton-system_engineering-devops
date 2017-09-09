@@ -1,3 +1,4 @@
+# editing class-wp-locale.phpp name to .php
 file { '/var/www/html/wp-setting.php':
  ensure => file,
 } ->
