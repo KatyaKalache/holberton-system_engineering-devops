@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
     tasks_total = task_complete + task_incomplete
 
-    print ("Employee", EMPLOYEE_NAME, "is done with tasks ({:d}/{:d})".
+    print ("Employee", EMPLOYEE_NAME, "is done with tasks({:d}/{:d}):".
            format(task_complete, tasks_total))
 
     for each in result:
