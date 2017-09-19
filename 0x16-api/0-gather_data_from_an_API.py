@@ -29,4 +29,4 @@ if __name__ == "__main__":
            format(task_complete, tasks_total))
 
     for each in result:
-        print ("    ", each)
+        print ("\t ", each)
