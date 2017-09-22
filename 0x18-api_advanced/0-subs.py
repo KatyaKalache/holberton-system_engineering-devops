@@ -4,7 +4,9 @@ import requests
 
 
 def number_of_subscribers(subreddit):
-    headers = {'User-Agent': 'info'}
+    if subreddit is None:
+        return 0
+    headers = {'user-agent': 'info'}
     subreddit = 'https://www.reddit.com/r/subreddit/about.json'
     req = requests.get(subreddit, headers=headers).json()
     if (req.get('error')):
