@@ -8,7 +8,7 @@ def number_of_subscribers(subreddit):
         return 0
     headers = {'user-agent': 'info'}
     subreddit = 'https://www.reddit.com/r/subreddit/about.json'
-    req = requests.get(subreddit, headers=headers).json()
+    req = requests.get(subreddit, headers).json()
     if (req.get('error')):
         return 0
     data = req.get('data')
