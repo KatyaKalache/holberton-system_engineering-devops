@@ -10,13 +10,7 @@ def top_ten(subreddit):
     headers = {'User-Agent': 'Mozilla/5.0'}
     subreddit = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     req = requests.get(subreddit, headers=headers)
-    if req is None:
-        print ('None')
-        return
     top_ten = req.json().get('data', {}).get('children')[:10]
-    if top_ten is None:
-        print ('None')
-        return
     try:
         for each in top_ten:
             title_list.append(each.get('data').get('title'))
@@ -29,3 +23,4 @@ def top_ten(subreddit):
         print (string_format)
     except:
         print ('None')
+        return
