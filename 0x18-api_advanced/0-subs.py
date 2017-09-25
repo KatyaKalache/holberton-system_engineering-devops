@@ -9,9 +9,10 @@ def number_of_subscribers(subreddit):
         return 0
     headers = {'User-Agent': 'Mozilla/5.0'}
     subreddit = 'https://www.reddit.com/r/{}/about.json'.format(subreddit)
-    req = requests.get(subreddit, headers=headers).json()
-    data = req.get('data')
-    subscribers = data.get('subscribers')
+    req = requests.get(subreddit, headers=headers)
+    if req.status_code == 301:
+        return 0
+    subscribers = req.json().get('data', {}).get('subscribers')
     if subscribers is None:
         return 0
     return subscribers
