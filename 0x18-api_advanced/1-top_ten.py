@@ -17,13 +17,15 @@ def top_ten(subreddit):
     if top_ten is None:
         print ('None')
         return
-    for each in top_ten:
-        title_list.append(each.get('data').get('title'))
-        if (counter != 9):
-            title_list.append('\n')
-        string_format = ''.join(title_list)
-        counter += 1
-    if counter == 0:
+    try:
+        for each in top_ten:
+            title_list.append(each.get('data').get('title'))
+            if (counter != 9):
+                title_list.append('\n')
+            string_format = ''.join(title_list)
+            counter += 1
+            if counter == 0:
+                print ('None')
+        print (string_format)
+    except:
         print ('None')
-        return
-    print (string_format)
