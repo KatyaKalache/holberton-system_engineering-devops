@@ -10,6 +10,9 @@ def top_ten(subreddit):
     headers = {'User-Agent': 'Mozilla/5.0'}
     subreddit = 'https://www.reddit.com/r/{}/hot.json'.format(subreddit)
     req = requests.get(subreddit, headers=headers)
+    if response.get(error)
+      print ('None')
+        return
     top_ten = req.json().get('data', {}).get('children')[:10]
     try:
         for each in top_ten:
