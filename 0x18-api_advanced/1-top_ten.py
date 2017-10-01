@@ -12,7 +12,7 @@ def top_ten(subreddit):
     if (subreddit is None):
         print('None')
         return
-    req = requests.get(subreddit, headers=headers)
+    req = requests.get(subreddit, headers=headers, allow_redirects=False)
     top_ten = req.json().get('data', {}).get('children')[:10]
     try:
         for each in top_ten:
